@@ -11,7 +11,7 @@ setenv: [
  [OCAMLTOP_INCLUDE_PATH = "%{toplevel}%"]
 ]
 build: [
-  ["./configure" "-prefix" prefix "--enable-native-toplevel" ]
+  ["./configure" "-prefix" prefix "--enable-native-toplevel" "--enable-flambda"]
   [make "world"]
   [make "world.opt"]
   [make "ocamlnat"]
